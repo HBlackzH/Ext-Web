@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salário</title>
+</head>
+<body>
+    <h1>Calculadora de Salário</h1>
+    
+    <form id="formulario">
+        <label for="salario">Salário Atual:</label>
+        <input type="number" id="salario" required>
+        
+        <label for="cargo">Selecione o Cargo:</label>
+        <select id="cargo" required>
+            <option value="diretor">Diretor</option>
+            <option value="secretario">Secretário</option>
+            <option value="operador">Operador</option>
+        </select>
+        
+        <button type="button" onclick="calcularSalario()">Calcular</button>
+    </form>
+    
+    <p id="resultado"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
